@@ -37,3 +37,4 @@ Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showRequestFo
 Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 
 Route::resource('users', 'UsersController', ['only'=> ['show', 'update', 'edit']]);
+Route::resource('topics', 'TopicsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
